@@ -102,6 +102,7 @@ main{
     margin: 4rem 0;
     color: greenyellow;
     padding: 1rem;
+    font-size: 1.5rem;
 }
 
 .button__section{
@@ -133,8 +134,12 @@ main{
 
 .text__area__output{
     width: 100%;
+    height: 200px;
     color: cyan;
     border: solid 1px whitesmoke;
+    padding: 1rem;
+    font-size: 1.5rem;
+
 }
 
 .container__output button{
@@ -147,11 +152,17 @@ main{
 }
 
 
-.clear{
-    margin-top: 0rem;
-    text-align: center;
+main button:hover{
+    transform: scale(1.02);
 }
 
+main button:active{
+    box-shadow: 2px 2px 4px white;
+}
+
+.button__copy:active{
+    box-shadow: 2px 2px 4px black;
+}
 
 /*-----------Estilos del footer------------*/
 
@@ -163,10 +174,12 @@ footer{
 }
 
 .clear{
+    margin-top: 0rem;
     display: flex;
     justify-content: space-between;
     align-items: end;
 }
+
 .button__reload{
     background: none;
     border: none;

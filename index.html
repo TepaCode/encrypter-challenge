@@ -22,9 +22,9 @@
         <section class="container__msg">
             <div class="container__input">
                 <p>Ingresa un mensage!</p>
-                <textarea class="text__area__input" id="" cols="30" rows="10"></textarea>
+                <textarea class="text__area__input" id="textInput" cols="30" rows="10"></textarea>
                 <div class="button__section">
-                    <button class="button__code">codificar</button>
+                    <button class="button__code" onclick="showMsg()">codificar</button>
                     <button class="button__decode">decodificador</button>
                 </div>
             </div>
@@ -32,7 +32,7 @@
                 <img src="/challenge-encriptador/src/Figure-01.png" alt="">
                 </iframe>
                 <p>Ingresa un mensage que desees encriptar o desencriptar</p>
-                <textarea class="text__area__output" name="" id="" cols="30" rows="10"></textarea>
+                <textarea class="text__area__output" name="" id="textOutput" cols="30" rows="10"></textarea>
                 <button class="button__copy">copiar</button>
             </div>
         </section>
@@ -43,7 +43,7 @@
     <footer>
         <section class="clear">
             
-            <button class="button__reload"><img class="icon__reload" src="/challenge-encriptador/src/Vector_reload_wt.png" alt=""></button>
+            <button onclick="reloadSite()" class="button__reload"><img class="icon__reload" src="/challenge-encriptador/src/Vector_reload_wt.png" alt=""></button>
             <div>
                 <a href="https://www.aluracursos.com/challenges/challenge-one-logica/sprint01-construye-un-encriptador-texto-con-javascript">Challenge ONE</a>
 
