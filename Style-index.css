@@ -11,100 +11,144 @@ body{
 }
 
 header{
-    height: 20vh;
-    background-color: rgb(48, 46, 46);
-    padding: 2rem;
-    color: whitesmoke;
+    height: 10vh;
+    background-color: rgb(207, 206, 206);
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+header img{
+    width: 15%;
+    height: 100%;
+    /*border: solid 2px gray;*/
+    padding: 1.5rem;
+    transition: .3s all;
+}
+
+header img:hover{
+    transform: scale(1.05);
 }
 
 header h1{
-    text-align: right;
-    vertical-align: bottom;
+    color: rgb(3, 70, 97);
+    font-size: 24px;
+    margin: 0 2rem 1rem 0;
+    transition: .3s all;
+}
+
+header h1:hover{
+    color: rgb(140, 148, 151);
+    transform: scale(1.02);
 }
 
 /*-----------Estilos del main------------*/
 
 main{
-    height: 60vh;
+    height: 80vh;
     padding: 2rem;
-    background: linear-gradient(315deg, black, magenta);
+    background: linear-gradient(0deg, rgb(105, 135, 160) 5%, rgb(255, 255, 255));
 }
 
 .container__title{
+    padding: 16px 0;
     text-align: center;
-    border: solid 2px gray;
+    border: none;
     margin-bottom: 2rem;
+    border-radius: 8px;
+    background: rgba(105, 105, 105, .1);
 }
 
 .container__title h2{
     margin-bottom: 1rem;
+    color: rgb(83, 83, 83);
 }
 
+.container__title p{
+    color: rgb(161, 161, 161);
+}
+
+
+/*----Contenedores msg----*/
 .container__msg{
     display: flex;
 }
 
-.container__msg p{
-    color: gray;
-    font-weight: bolder;
-    margin-bottom: 8px;
-}
-
-.container__input, .container__output{
-    border: solid 2px gray;
-    border-radius: 16px;
+.container__input{
     width: 50%;
-    padding: 1rem;
-}
-
-.text__area{
-    width: 100%;
-    background-color: rgb(36, 35, 35);
-    padding: 8px;
-}
-
-.container__input .text__area{
-    color: greenyellow;
-}
-
-
-.container__output .text__area{
-    color: cyan;
-}
-
-.container__msg button{
-    width: 240px;
-    margin: 1rem;
-    height: 2rem;
-    border: none;
-    border-radius: 16px;
-    font-weight: bolder;
-    font-size: 1.5rem;
-    color: white;
-
-}
-
-.container__input button{
-    background-color: rgb(0, 87, 128);
-}
-
-.container__output button{
-    background-color: black;
-    border: solid 2px green;
-}
-
-
-
-.container__input{    
-    margin-right: 8px;
+    margin-right: 16px;
 }
 
 .container__output{
-    margin-left: 8px;
+    margin-left: 16px;
+    border-radius: 16px;
+    width: 50%;
+    padding: 1rem;
+    background-color: white;
+    text-align: center;
 }
 
+.container__msg p{
+    color: rgb(90, 89, 89);
+    font-weight: bolder;
+    margin-bottom: 16px;
+}
+
+.text__area__input{
+    width: 100%;
+    height: 300px;
+    background-color: rgba(105, 105 ,105 ,.1);
+    border: none;
+    margin: 4rem 0;
+    color: greenyellow;
+    padding: 1rem;
+}
+
+.button__section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__input button{
+    font-size: 1rem;
+    width: 45%;
+    border-radius: 16px;
+    padding: 8px;
+    font-weight: bolder;
+    height: 3rem;
+}
+
+.button__code{
+    color: rgb(226, 220, 220);
+    background-color: rgb(0, 87, 128);
+    border: none;
+}
+
+.button__decode{
+    color: rgb(0, 87, 128);
+    background-color:rgb(149, 156, 168) ;
+    border: solid 3px rgb(0, 87, 128);
+}
+
+
+.text__area__output{
+    width: 100%;
+    color: cyan;
+    border: solid 1px whitesmoke;
+}
+
+.container__output button{
+    background-color: white;
+    border: solid 2px rgb(0, 87, 128);
+    border-radius: 16px;
+    height: 3rem;
+    width: 200px;
+    font-weight: bolder;
+}
+
+
 .clear{
-    margin-top: 2rem;
+    margin-top: 0rem;
     text-align: center;
 }
 
@@ -112,7 +156,42 @@ main{
 /*-----------Estilos del footer------------*/
 
 footer{
-    height: 20vh;
+    height: 10vh;
     background-color: rgb(48, 46, 46);
     color: aqua;
+    padding: 1rem 2rem;
+}
+
+.clear{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.button__reload{
+    background: none;
+    border: none;
+}
+
+.icon__reload{
+    width: 40px;
+    /*transition: 1.001s all;*/
+}
+
+.icon__reload:hover{
+    transform: scale(1.1);
+}
+
+/*.clear div{
+    border: solid 2px white;
+   
+}*/
+
+.clear a{
+    color: white;
+    text-decoration: none;
+    margin-left: 2rem;
+}
+
+.clear a:hover{
+    border-bottom: solid 2px white;
 }
