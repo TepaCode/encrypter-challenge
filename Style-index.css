@@ -2,6 +2,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
 }
 
 /*-----------Estilos del header------------*/
@@ -19,8 +24,8 @@ header{
 }
 
 header img{
-    width: 15%;
-    height: 100%;
+    width: 180px;
+    height: 100px;
     /*border: solid 2px gray;*/
     padding: 1.5rem;
     transition: .3s all;
@@ -33,6 +38,7 @@ header img:hover{
 header h1{
     color: rgb(3, 70, 97);
     font-size: 24px;
+    font-weight: bolder;
     margin: 0 2rem 1rem 0;
     transition: .3s all;
 }
@@ -80,12 +86,16 @@ main{
 }
 
 .container__output{
+    background-image: url("/challenge-encriptador/src/Figure-01.png");
+    background-repeat: no-repeat;
+    background-position: center;
+   
     margin-left: 16px;
     border-radius: 16px;
     width: 50%;
     padding: 1rem;
     background-color: white;
-    text-align: center;
+    /*text-align: center;*/
 }
 
 .container__msg p{
@@ -99,13 +109,20 @@ main{
     height: 300px;
     background-color: rgba(105, 105 ,105 ,.1);
     border: none;
-    margin: 4rem 0;
+    margin-top: 4rem;
     color: greenyellow;
     padding: 1rem;
     font-size: 1.5rem;
 }
+.notas{
+    text-align: right;
+    font-size: 12px;
+    color: rgb(158, 155, 155);
+    margin-top: 8px;
+}
 
 .button__section{
+    margin-top: 4rem;
     display: flex;
     justify-content: space-between;
 }
@@ -139,7 +156,12 @@ main{
     border: solid 1px whitesmoke;
     padding: 1rem;
     font-size: 1.5rem;
+}
 
+.container__out{
+    /*background-image: url("/challenge-encriptador/src/Figure-01.png");
+    background-repeat: no-repeat;*/
+    border: solid 1px rgb(136, 34, 34);
 }
 
 .container__output button{
@@ -207,4 +229,16 @@ footer{
 
 .clear a:hover{
     border-bottom: solid 2px white;
+}
+
+.button__testeo{
+    border: none;
+    width: 120px;
+    padding: 1rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+}
+
+.button__testeo:active{
+    box-shadow: 8px 8px 8px rgb(82, 77, 77);
 }
