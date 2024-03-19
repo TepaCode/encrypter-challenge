@@ -9,7 +9,13 @@ let letterI = "imes";
 let letterO = "ober";
 let letterU = "ufat";
 
-
+const matrizCodigo = [
+    ["e","enter"],
+    ["i","imes"],
+    ["a","ai"],
+    ["o","ober"],
+    ["u","ufat"],
+];
 
 
 //Declaración de formulas
@@ -31,11 +37,11 @@ function sendTextEncrypter(msgIngresado){
 
 
     let setStyle = document.getElementsById("containerOutput");
-    setStyle.style.backgroundImage = none;
+    //setStyle.style.backgroundColor = none;
 
-    setStyle.style.backgroundColor = gray;
+    setStyle.Style.backgroundColor = gray;
 
-    msgIngresado.value= "55555";
+    //msgIngresado.value= "55555";
 
 }
 
@@ -62,19 +68,25 @@ function encrypter(){
 }
 
 
-function testButton(){
-    msgIngresado.value = "";
 
-}
     
 
+//---------Función para copiar texto al portapapales----------
 function copyText(){
     let portapapeles = document.getElementById("textOutput").value;
     alert(`Mensaje copiado: ${portapapeles}`);
 
 }
 
+//---------Función para reiniciar pagina completa----------
 function reloadSite(){
     document.location.reload()
+}
+
+function testButton(){
+    let msgOutput = document.getElementById("textOutput");
+    msgOutput.value="";
+    //msgIngresado.value = "";
+
 }
 
