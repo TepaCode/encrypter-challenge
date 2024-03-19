@@ -51,7 +51,7 @@ header h1:hover{
 /*-----------Estilos del main------------*/
 
 main{
-    height: 80vh;
+    min-height: 80vh;
     padding: 2rem;
     background: linear-gradient(0deg, rgb(105, 135, 160) 5%, rgb(255, 255, 255));
 }
@@ -241,4 +241,119 @@ footer{
 
 .button__testeo:active{
     box-shadow: 8px 8px 8px rgb(82, 77, 77);
+}
+
+
+/*--------Media Queries-----*/
+
+@media screen and (max-width: 480px){
+    /*----Estilos header----*/
+
+    header h1{
+        font-size: 12px;
+        margin: 0 12px 1rem 0;
+    }
+
+    header img{
+        width: 120px;
+        height: 60px;
+        padding: 12px;
+    }
+
+/*-----------Estilos del main------------*/
+
+    main{
+        padding: 1rem;
+    }
+
+    .container__title{
+        font-size: 12px;
+    }
+
+/*----Contenedores msg----*/
+
+    .container__msg{
+        display: flex;
+        flex-direction: column;
+    }
+    .container__input{
+        width: 100%;
+    }
+
+    .container__output{
+      
+        width: 100%;
+        margin-left: 0;
+        height: 400px;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .container__msg p{
+        margin-bottom: 4px;
+    }
+
+    .text__area__input{
+        margin-top: 1rem;
+    }
+
+    .container__output{
+        width: 100%;
+    }
+    
+    .button__section{
+        margin-top: 1rem;
+    }
+    
+    .container__input button{
+        font-size: 12px;
+        height: 40px;
+    }
+/*-----------Estilos del footer------------*/
+
+    footer{
+        padding: 1rem;
+    }
+
+    .clear{
+        margin-top: 0rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+    }
+
+    .button__reload{
+        background: none;
+        border: none;
+    }
+
+    .icon__reload{
+        width: 40px;
+        /*transition: 1.001s all;*/
+    }
+
+    .icon__reload:hover{
+        transform: scale(1.1);
+    }
+
+    /*.clear div{
+        border: solid 2px white;
+    
+    }*/
+
+    .icon__reload{
+        width: 32px;
+    }
+    .clear{
+    }
+    .clear a{
+        font-size: 12px;
+        margin-left: 12px;
+        
+    }
+
+    .clear a:hover{
+        border-bottom: solid 2px white;
+    }
+
 }
