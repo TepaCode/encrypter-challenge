@@ -86,7 +86,7 @@ main{
 }
 
 .container__output{
-    background-image: url("/challenge-encriptador/src/Figure-01.png");
+    background-image: url("./src/Figure-01.png");
     background-repeat: no-repeat;
     background-position: center;
    
